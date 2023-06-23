@@ -14,14 +14,15 @@ public class QccCalenderData {
     public static void main(String[] args) {
 
 
-    //private static final Logger logger = LogManager.getLogger (QccCalenderData.class);
-    //logger.info("get calaneder info");
+    final Logger logger = LogManager.getLogger (QccCalenderData.class);
+    logger.info("get calender info");
     String url = "https://www.qcc.cuny.edu/academics/academic-calendars.html";
 
     // Get the current System Properties
     String systemProperties = System.getProperties ().toString ();
 
     String driverpath = System.getProperty ("user.dir") + "/driver/chrome/chromedriver";
+    logger.info ("browser open");
 
     // Let's show the application where is the driver object
 
